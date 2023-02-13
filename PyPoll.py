@@ -1,11 +1,11 @@
-#Add our depebndencies.
+# Add our dependencies.
 import csv
-dir(csv)
 import os
-# Assign a variable for the file to load and the path
-file_to_load = os.path.join("Resourses","election_results.csv")
-#Create a filename variable to a direct or indirect path to the file.
-file_to_save = os.path.join("election_analysis.txt")
+# Assign a variable to load a file from a path.
+file_to_load = os.path.join("Documents","projects","Election_Analysis","Resources","election_results.csv")
+# Assign a variable to save the file to a path.Documents/projects/Election_Analysis
+file_to_save = os.path.join("Documents","projects","Election_Analysis","analysis", "election_analysis.txt")
+
 # Initialize a total vote counter.
 total_votes = 0
 # Candidate options and candidate votes.
@@ -73,10 +73,3 @@ with open(file_to_save, "w") as txt_file:
     print(winning_candidate_summary)
     # Save the winning candidate's results to the text file.
     txt_file.write(winning_candidate_summary)
-
-
-
-
-
-
-
